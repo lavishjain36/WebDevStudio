@@ -1,0 +1,107 @@
+---
+description:
+globs:
+alwaysApply: false
+
+
+🚀 PRD: Code Execution Platform (HTML, CSS, JS)
+1. 🎯 Problem Statement
+
+Learners often need a sandbox environment to quickly test and run HTML, CSS, and JavaScript without installing anything locally. Current platforms (like CodePen, JSFiddle, etc.) are good but too broad, whereas you want a custom lightweight platform for learners that supports execution, sharing, and collaboration.
+
+2. ✅ Core Features
+2.1 Editor
+
+Three Panels: HTML, CSS, JavaScript (separate editors with tabs or side-by-side layout).
+
+Code Editor Features:
+
+Syntax highlighting
+
+Line numbers
+
+Auto indentation
+
+Bracket matching
+
+Optional: Autocomplete (using Monaco or CodeMirror).
+
+2.2 Execution Engine
+
+Live Preview (iframe-based rendering).
+
+"Run" button to re-render code.
+
+Auto-run toggle (optional for live update on typing).
+
+2.3 Layout Management
+
+Resizable panels (drag to resize HTML/CSS/JS/output).
+
+Dark/Light mode toggle.
+
+Mobile-friendly responsive design.
+
+2.4 User Features
+
+Save code snippets to account.
+
+Share code via unique URL.
+
+Fork existing snippets.
+
+Export as .zip (HTML/CSS/JS).
+
+2.5 Authentication (Phase 2, optional)
+
+Login via email/password or Google OAuth.
+
+Personal dashboard of saved snippets.
+
+Public/Private snippet setting.
+
+2.6 Collaboration (Phase 3, optional)
+
+Real-time multiplayer editing (WebSockets / WebRTC).
+
+Commenting system.
+
+3. 🛠️ Technical Requirements
+3.1 Frontend
+
+Framework: React.js with vite (preferred).
+
+Editor: Monaco Editor (used by VS Code) 
+
+UI: Tailwind CSS / shadcn-ui.
+
+Preview: Iframe sandbox for HTML+CSS+JS injection.
+
+
+3 Deployment
+
+Hosting:  Netlify (frontend).
+
+
+
+4. Nice-to-Have Add-ons
+
+Prebuilt templates (e.g., HTML boilerplate, CSS grid, JS DOM example).
+
+Themes for the editor (like VS Code themes).
+
+Code beautifier (Prettier integration).
+
+Console panel for JS logs/errors.
+
+
+7. MVP (Minimum Viable Product)
+
+HTML/CSS/JS Editor (with Monaco or CodeMirror).
+
+Live Preview in iframe in bottom row.
+
+Run button + Auto-run toggle.
+
+Resizable panels.
+---
